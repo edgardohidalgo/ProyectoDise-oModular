@@ -14,9 +14,11 @@ public class main {
         System.out.println("Usuario selecciona buscar por origen");
         lugar = "Andorra";
 // Codigo para buscar por origen
-        System.out.println("Usuario selecciona ordenar por precio de menor a mayor");
-// Codigo para ordenar de mayor a menor precio
-        System.out.println("Usuario selecciona ordenar por precio de menor a mayor");
+        System.out.println("Ordenando productos por precio de menor a mayor:");
+        ordenar.ordenar(true);
+
+        System.out.println("\nOrdenando productos por precio de mayor a menor:");
+        ordenar.ordenar(false);
 // Codigo para ordenar de mayor a menor precio
         System.out.println("Usuario selecciona varios productos para comprar");
 // Codigo para seleccionar primer producto
