@@ -10,6 +10,7 @@ public class main {
         System.out.println("Usuario selecciona buscar por nombre");
         nombre = "Juana";
 // Codigo para buscar por nombre
+        buscar.buscarNombre(nombre);
         System.out.println("Usuario selecciona buscar por origen");
         lugar = "Andorra";
 // Codigo para buscar por origen
