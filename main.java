@@ -7,32 +7,54 @@ public class main {
         String nombre, lugar;
         double cantidad;
         System.out.println("Buenos dias! Que quieres hacer hoy?");
+        System.out.println();
         System.out.println("Usuario selecciona buscar por nombre");
+
         nombre = "Juana";
-// Codigo para buscar por nombre
         buscar.buscarNombre(nombre);
+        System.out.println();
+
+        // Codigo para buscar por nombre
+        System.out.println();
         System.out.println("Usuario selecciona buscar por origen");
         lugar = "Andorra";
-// Codigo para buscar por origen
+        buscar.buscarOrigen(lugar);
+        System.out.println();
+
         System.out.println("Ordenando productos por precio de menor a mayor:");
         ordenar.ordenar(true);
 
-        System.out.println("\nOrdenando productos por precio de mayor a menor:");
+        System.out.println("Ordenando productos por precio de mayor a menor:");
+        System.out.println();
+
         ordenar.ordenar(false);
-// Codigo para ordenar de mayor a menor precio
+        // Codigo para ordenar de mayor a menor precio
         System.out.println("Usuario selecciona varios productos para comprar");
-// Codigo para seleccionar primer producto
         nombre = "Hierba de los bosques";
         cantidad = 3;
-// Codigo para seleccionar segundo producto
+        carritoCompras.agregarCarro(nombre , cantidad);
+        System.out.println();
+
+        // Codigo para seleccionar segundo producto
         nombre = "El oro verde";
         cantidad = 1;
-// Codigo para seleccionar tercer producto
+        carritoCompras.agregarCarro(nombre , cantidad);
+        System.out.println();
+
+       // Codigo para seleccionar tercer producto
         nombre = "La seta feliz";
         cantidad = 2.5;
+        carritoCompras.agregarCarro(nombre , cantidad);
+        System.out.println();
+
         System.out.println("Usuario elimina el segundo elemento de su carrito");
-// Codigo para eliminar elemento del carrito
+        // Codigo para eliminar elemento del carrito
+
+        System.out.println();
+
+        carritoCompras.borrarCarrito("EL ORO VERDE");
         System.out.println("Usuario finaliza la compra");
-// Codigo para finalizar la compra y que salga el total de la compra
+        carritoCompras.finalizarCompra();
+       // Codigo para finalizar la compra y que salga el total de la compra
     }
 }//Funciones extra que considereis necesarias
