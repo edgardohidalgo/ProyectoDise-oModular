@@ -9,12 +9,16 @@ public class main {
         System.out.println("Buenos dias! Que quieres hacer hoy?");
         System.out.println();
         System.out.println("Usuario selecciona buscar por nombre");
+
         nombre = "Juana";
-        buscar.buscarNombre(nombre); // Codigo para buscar por nombre
+        buscar.buscarNombre(nombre);
+        System.out.println();
+
+        // Codigo para buscar por nombre
         System.out.println();
         System.out.println("Usuario selecciona buscar por origen");
         lugar = "Andorra";
-       buscar.buscarOrigen(lugar);
+        buscar.buscarOrigen(lugar);
         System.out.println();
 
         System.out.println("Ordenando productos por precio de menor a mayor:");
@@ -24,11 +28,11 @@ public class main {
         System.out.println();
 
         ordenar.ordenar(false);
-// Codigo para ordenar de mayor a menor precio
+        // Codigo para ordenar de mayor a menor precio
         System.out.println("Usuario selecciona varios productos para comprar");
         nombre = "Hierba de los bosques";
         cantidad = 3;
-      carritoCompras.agregarCarro(nombre , cantidad);
+        carritoCompras.agregarCarro(nombre , cantidad);
         System.out.println();
 
         // Codigo para seleccionar segundo producto
@@ -37,20 +41,20 @@ public class main {
         carritoCompras.agregarCarro(nombre , cantidad);
         System.out.println();
 
-// Codigo para seleccionar tercer producto
+       // Codigo para seleccionar tercer producto
         nombre = "La seta feliz";
         cantidad = 2.5;
         carritoCompras.agregarCarro(nombre , cantidad);
         System.out.println();
 
         System.out.println("Usuario elimina el segundo elemento de su carrito");
-// Codigo para eliminar elemento del carrito
+        // Codigo para eliminar elemento del carrito
 
         System.out.println();
 
         carritoCompras.borrarCarrito("EL ORO VERDE");
         System.out.println("Usuario finaliza la compra");
         carritoCompras.finalizarCompra();
-// Codigo para finalizar la compra y que salga el total de la compra
+       // Codigo para finalizar la compra y que salga el total de la compra
     }
 }//Funciones extra que considereis necesarias
